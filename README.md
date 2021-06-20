@@ -182,7 +182,7 @@ Currently, the BiSeNetv2 and PSPNet models are supported. The BiSeNetv2 model is
 
 
 ## License
-This project uses The GNU General Public License v3.0 (GPL3.0). Any program using this project needs to follow the content of the GPL3.0 and add citation sources . What's more , the modified and derived code is not allowed to be released and sold as closed source commercial software. 
+This project uses The GNU General Public License v3.0 (GPL3.0). Any program using this project needs to follow the content of the GPL3.0 and add citation sources.
 ## About us
 SCULAB https://www.scurbanlab.com/
 ## Thanks

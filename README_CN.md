@@ -182,7 +182,7 @@ if response:
 
 
 ## 开源协议
-本项目使用The GNU General Public License v3.0(GPL3.0)开源协议，基于项目的二次开发需要遵循GPL3.0协议中的内容，使用代码需要添加引用出处，不允许修改后和衍生的代码做为闭源的商业软件发布和销售。
+本项目使用The GNU General Public License v3.0(GPL3.0)开源协议，基于项目的二次开发需要遵循GPL3.0协议中的内容，使用代码需要添加引用出处。
 ## 关于我们
 SCULAB https://www.scurbanlab.com/
 ## 特别致谢
