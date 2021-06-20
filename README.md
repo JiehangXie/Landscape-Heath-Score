@@ -32,6 +32,7 @@ Landscape-Health Score (LHS) is an auxiliary evaluation tool based on Paddlepadd
   - [Structure](#structure)
   - [Model List](#model-list)
   - [License](#license)
+  - [About us](#about-us)
   - [Thanks](#thanks)
 
 # Functions
@@ -182,6 +183,8 @@ Currently, the BiSeNetv2 and PSPNet models are supported. The BiSeNetv2 model is
 
 ## License
 This project uses The GNU General Public License v3.0 (GPL3.0). Any program using this project needs to follow the content of the GPL3.0 and add citation sources . What's more , the modified and derived code is not allowed to be released and sold as closed source commercial software. 
+## About us
+SCULAB https://www.scurbanlab.com/
 ## Thanks
 Paddlepaddle http://www.paddlepaddle.org.cn  
 GT https://github.com/GT-ZhangAcer

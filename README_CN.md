@@ -30,6 +30,7 @@ Landscape-Health Score（LHS）是一个基于百度Paddlepaddle深度学习框�
   - [文件目录架构](#文件目录架构)
   - [模型选择](#模型选择)
   - [开源协议](#开源协议)
+  - [关于我们](#关于我们)
   - [特别致谢](#特别致谢)
 
 # 功能介绍
@@ -182,6 +183,8 @@ if response:
 
 ## 开源协议
 本项目使用The GNU General Public License v3.0(GPL3.0)开源协议，基于项目的二次开发需要遵循GPL3.0协议中的内容，使用代码需要添加引用出处，不允许修改后和衍生的代码做为闭源的商业软件发布和销售。
+## 关于我们
+SCULAB https://www.scurbanlab.com/
 ## 特别致谢
 百度飞桨 http://www.paddlepaddle.org.cn  
 GT https://github.com/GT-ZhangAcer
