@@ -1,0 +1,9 @@
+opencv-python>=4.5.2.54
+paddlepaddle-gpu>=2.0.1
+flask_cors>=3.0.10
+paddleseg>=2.1.0
+pyyaml>=5.4.1
+flask>=2.0.1
+gevent>=21.1.2
+filelock>=3.0.12
+scipy>=1.6.3
