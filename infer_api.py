@@ -109,8 +109,6 @@ class Predictor:
         results = concatenate(results, axis=0)
         for i in range(results.shape[0]):
             result = results[i]
-
-            #统计像素比例
             pix_count = dict(Counter(result.flatten()))
             pix_sum = sum(pix_count.values())
 
@@ -138,7 +136,6 @@ class Predictor:
                     else:
                         element_percentage['others'] += pix_count[c]/pix_sum
                 except:pass
-            
             #Green index
             GLR = round(element_percentage['vegetation']+element_percentage['terrain'],2)
             #Q_score
