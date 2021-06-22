@@ -73,7 +73,7 @@ Landscape-Health Score（LHS）是一个基于百度Paddlepaddle深度学习框�
 ### 2.2 安装依赖包
 按下`Win+R`键，输入cmd，进入命令行窗口  
 输入`cd LHS所在的文件夹目录`进入目录  
-输入`pip install requirement.txt`  
+输入`pip install -r requirement.txt`  
 耐心等待安装完成即可。
 ### 2.3 下载模型
 前往[模型选择](#模型选择)下载任一模型的压缩包，并解压后将全部文件复制到model文件夹中。初次使用，推荐下载BiSeNetv2模型。

@@ -7,3 +7,4 @@ flask>=2.0.1
 gevent>=21.1.2
 filelock>=3.0.12
 scipy>=1.6.3
+qpt>=1.0a7
