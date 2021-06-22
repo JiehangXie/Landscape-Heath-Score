@@ -74,7 +74,7 @@ Packing……
 ### 2.2 Install Dependency Package
 Press `Win+R` , enter `cmd`  
 Enter `cd [LHS folder]`  
-Enter `pip install requirement.txt`  
+Enter `pip install -r requirement.txt`  
 Wait patiently for the installation to complete.
 ### 2.3 Download Model
 Go to [Model List](#model-list) to download and decompress package of the model,and copy all the files to the folder named `model`.We recommend downloading `BiSeNetv2` model.
