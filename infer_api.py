@@ -28,6 +28,8 @@ from base64 import b64decode,b64encode
 from io import BytesIO
 import json
 from Qscore_algorithm import cal_Q_score
+import time
+
 
 #Initialization environment
 env_info = get_sys_env()
@@ -117,18 +119,10 @@ class Predictor:
                                 'traffic sign','vegetation','terrain',
                                 'sky','person','rider','car','truck',
                                 'bus','train','motorcycle','bicycle']
-            element_percentage = {
-                'sky':0,
-                'terrain':0,
-                'vegetation':0,
-                'pole':0,
-                'fence':0,
-                'wall':0,
-                'building':0,
-                'sidewalk':0,
-                'road':0,
-                'others':0
-            }
+            element_percentage = {'sky':0, 'terrain':0, 'vegetation':0, 
+                                'pole':0, 'fence':0, 'wall':0, 'building':0,
+                                'sidewalk':0,'road':0,'others':0
+                                }
             for c in range(0,len(cityscape_class)):
                 try:
                     if element_percentage.__contains__(cityscape_class[c]):
@@ -152,31 +146,16 @@ class Predictor:
 
             return element_percentage,result,Q_score,GLR
 
-def get_images(image_path, support_ext=".jpg|.jpeg|.png"):
-    if not os.path.exists(image_path):
-        raise Exception(f"Image path {image_path} invalid")
-
-    if os.path.isfile(image_path):
-        return [image_path]
-
-    imgs = []
-    for item in os.listdir(image_path):
-        ext = os.path.splitext(item)[1][1:].strip().lower()
-        if (len(ext) > 0 and ext in support_ext):
-            item_path = os.path.join(image_path, item)
-            imgs.append(item_path)
-    return imgs
-
 def seg_photo(image_path):
     predictor = Predictor()
-    result = predictor.run(get_images(image_path))
+    result = predictor.run([image_path])
     return result
 
 def seg_api(image_base64):
     image_post = b64decode(image_base64)
 
     if not os.path.exists('./tmp'): os.mkdir('./tmp')
-    tmp_file = './tmp/tmp.jpg'
+    tmp_file = './tmp/{}.jpg'.format(time.time())
     with open(tmp_file,'wb') as f:
         f.write(image_post)
     seg_result = seg_photo(tmp_file)
