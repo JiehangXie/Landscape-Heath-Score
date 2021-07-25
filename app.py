@@ -31,7 +31,12 @@ def api_v1(datatype):
     return jsonify(proportion=image_seg_result,image=image_base64_result,score=score,gvr=GLR)
 
 if __name__ == '__main__':
-    server = pywsgi.WSGIServer(('0.0.0.0', 5000), app)
+    network = input('Do you want to run with ipv4 or ipv6(Input 4 or 6,default 4):')
+    if network=="6":
+        server = pywsgi.WSGIServer(('::', 5000), app) #ipv6
+    else:
+        server = pywsgi.WSGIServer(('0.0.0.0', 5000), app) #ipv4s
+    
     print('Run successfully!Please use your browser to access the following ip address:')
-    print('---   http://127.0.0.1:5000/ ')
+    print('---   http://localhost:5000/ ')
     server.serve_forever()
