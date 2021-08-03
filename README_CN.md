@@ -66,7 +66,8 @@ Landscape-Health Score（LHS）是一个基于百度Paddlepaddle深度学习框�
 * Vite 2
 * VUE 3.0
 ## 1.Windows运行
-努力打包中，后续支持
+2021.08.03 - 针对Windows优化的稳定版本V1.0.1已经发布，[点击这里下载](https://github.com/JiehangXie/Landscape-Heath-Score/releases/tag/1.0.1)。
+> 使用方法：直接解压，然后运行“启动程序.exe”或者“使用兼容模式运行.cmd”，默认已包含了BiSeNetv2模型。
 
 ## 2.源代码运行
 ### 2.1 安装Python 3.7+
