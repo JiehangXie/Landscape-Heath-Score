@@ -4,6 +4,7 @@ from base64 import b64encode
 from flask_cors import *
 from io import BytesIO
 from gevent import pywsgi
+from network import check_ipv6
 
 app = Flask(__name__,template_folder="./dist",
             static_folder="./dist/assets")
@@ -31,11 +32,12 @@ def api_v1(datatype):
     return jsonify(proportion=image_seg_result,image=image_base64_result,score=score,gvr=GLR)
 
 if __name__ == '__main__':
-    network = input('Do you want to run with ipv4 or ipv6(Input 4 or 6,default 4):')
-    if network=="6":
+    ipv6_support = check_ipv6()
+
+    if ipv6_support:
         server = pywsgi.WSGIServer(('::', 5000), app) #ipv6
     else:
-        server = pywsgi.WSGIServer(('0.0.0.0', 5000), app) #ipv4s
+        server = pywsgi.WSGIServer(('0.0.0.0', 5000), app) #ipv4
     
     print('Run successfully!Please use your browser to access the following ip address:')
     print('---   http://localhost:5000/ ')

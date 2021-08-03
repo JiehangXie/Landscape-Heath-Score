@@ -67,7 +67,8 @@ It supports the evaluation and analysis of six psychological dimensions such as 
 * Vite 2
 * VUE 3.0
 ## 1.Run on Windows
-Packing…… 
+2021.08.03 - The stable version v1.0.1 optimized for windows has been released, [click here to download](https://github.com/JiehangXie/Landscape-Heath-Score/releases/tag/1.0.1)
+> Usage: unzip directly, and then run "启动程序.exe" or "使用兼容模式运行.cmd". Bisenetv2 model is included by default.
 
 ## 2.Run on Source Code
 ### 2.1 Install Python 3.7+
