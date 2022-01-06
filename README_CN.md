@@ -186,6 +186,21 @@ if response:
 本项目使用The GNU General Public License v3.0(GPL3.0)开源协议，基于项目的二次开发需要遵循GPL3.0协议中的内容，使用代码需要添加引用出处。
 ## 关于我们
 SCULAB https://www.scurbanlab.com/
+## 学术引用 
+如果我们的项目帮助到你，请考虑以下引用： 
+ 
+```latex
+@article{CHEN2021151605,
+        title = {Predicting the effect of street environment on residents' mood states in large urban areas using machine learning and street view images},
+        journal = {Science of The Total Environment},
+        pages = {151605},
+        year = {2021},
+        issn = {0048-9697},
+        doi = {https://doi.org/10.1016/j.scitotenv.2021.151605},
+        author = {Chongxian Chen and Haiwei Li and Weijing Luo and Jiehang Xie and Jing Yao and Longfeng Wu and Yu Xia}
+}
+```
+
 ## 特别致谢
 百度飞桨 http://www.paddlepaddle.org.cn  
 GT https://github.com/GT-ZhangAcer

@@ -186,6 +186,20 @@ Currently, the BiSeNetv2 and PSPNet models are supported. The BiSeNetv2 model is
 This project uses The GNU General Public License v3.0 (GPL3.0). Any program using this project needs to follow the content of the GPL3.0 and add citation sources.
 ## About us
 SCULAB https://www.scurbanlab.com/
+## Citation
+If you find our project useful in your research, please consider citing: 
+
+```latex
+@article{CHEN2021151605,
+        title = {Predicting the effect of street environment on residents' mood states in large urban areas using machine learning and street view images},
+        journal = {Science of The Total Environment},
+        pages = {151605},
+        year = {2021},
+        issn = {0048-9697},
+        doi = {https://doi.org/10.1016/j.scitotenv.2021.151605},
+        author = {Chongxian Chen and Haiwei Li and Weijing Luo and Jiehang Xie and Jing Yao and Longfeng Wu and Yu Xia}
+}
+```
 ## Thanks
 Paddlepaddle http://www.paddlepaddle.org.cn  
 GT https://github.com/GT-ZhangAcer
